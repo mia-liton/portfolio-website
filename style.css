@@ -729,8 +729,8 @@ section.active {
 .contact-box .field-box textarea {
     padding: 1.5rem;
     background: var(--bg-color);
-    border: 0.15rem solid var(--bg-color);
-    border-radius: 0.6rem;
+    border: .15rem solid var(--bg-color);
+    border-radius: .6rem;
     font-size: 1.6rem;
     color: var(--white-color);
 }
@@ -751,19 +751,22 @@ section.active {
     cursor: pointer;
 }
 
-/* Breakpoints */
+/* breakpoints */
 @media screen and (max-width: 1200px) {
     html {
         font-size: 55%;
-    }
-
-    .contact-box .field-box {
-        grid-template-columns: 1fr; /* Ensure single-column layout */
     }
 }
 
 section {
     padding: 10rem 4% 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .contant-box .field-box {
+        grid-template-columns: 1fr;
+
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -778,8 +781,8 @@ section {
         width: 100%;
         padding: 1rem 0;
         background: var(--bg-color);
-        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         text-align: center;
         display: none;
     }
@@ -819,7 +822,7 @@ section {
     }
 
     .contact-box .field-box {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -836,7 +839,7 @@ section {
 
 @media screen and (max-width: 450px) {
     html {
-        font-size: 52%; /* Slightly increased for better readability */
+        font-size: 50%;
     }
 }
 
@@ -845,7 +848,7 @@ section {
     .resume-box h2,
     .resume-box .heading,
     .resume-box .desc,
-    .resume-detail.about .resume-item {
+    resume-detail.about .resume-item {
         text-align: center;
     }
 
