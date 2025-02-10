@@ -17,10 +17,10 @@
 
   <body>
     <!-- Header -->
-    <header>
-      <a href="#" class="logo">Liton</a>
-      <!-- Menu icon-check -->
-      <i class="bx bx-menu" id="menu-icon-check"></i>
+    <header class="active">
+      <a href="#" class="logo">Liton.</a>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
 
       <nav>
         <a href="#" class="active">Home</a>
@@ -31,37 +31,66 @@
       </nav>
     </header>
 
+    <!-- bars background -->
+    <div class="bars-box active">
+      <div class="bar" style="--i:6;"></div>
+      <div class="bar" style="--i:5;"></div>
+      <div class="bar" style="--i:4;"></div>
+      <div class="bar" style="--i:3;"></div>
+      <div class="bar" style="--i:2;"></div>
+      <div class="bar" style="--i:1;"></div>
+    </div>
+
     <!-- Home Section -->
-    <section class="home">
+    <section class="home active">
       <div class="home-detail">
+        <!-- Name -->
         <h1>Liton Mia</h1>
+
+        <!-- Dynamic Text Section -->
         <h2>
           I'm a
-          <span style="--i: 4" data-text="Product Designer">Product Designer</span>
+          <span style="--i: 4" data-text="Product Designer"
+            >Product Designer</span
+          >
           <span style="--i: 3" data-text="Youtuber">Youtuber</span>
           <span style="--i: 2" data-text="Blogger">Blogger</span>
           <span style="--i: 1" data-text="UI/UX Designer">UI/UX Designer</span>
         </h2>
+
+        <!-- Description -->
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
           itaque voluptates praesentium odit aliquam rem ipsam sed repellat
           ipsum perspiciatis. Sequi unde earum reprehenderit nisi. Ab voluptas
           vitae molestias mollitia!
         </p>
+
+        <!-- Buttons and Social Icons -->
         <div class="btn-sci">
-          <a href="#" class="btn">Download CV</a>
+          <a href="#" class="btn" download>Download CV</a>
           <div class="sci">
-            <a href="#"><i class="bx bxl-github"></i></a>
-            <a href="#"><i class="bx bxl-linkedin"></i></a>
-            <a href="#"><i class="bx bxl-discord-alt"></i></a>
-            <a href="#"><i class="bx bxl-youtube"></i></a>
+            <a href="#" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="#" aria-label="Discord"
+              ><i class="bx bxl-discord-alt"></i
+            ></a>
+            <a href="#" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
           </div>
         </div>
       </div>
+
+      <!-- Profile Image Section -->
       <div class="home-img">
         <div class="img-box">
           <div class="img-item">
-            <img src="images/home.png" alt="Liton Mia's Profile Picture" />
+            <img
+              src="images/home.png"
+              alt="Liton Mia's Profile Picture"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -139,7 +168,9 @@
             soluta, sapiente nemo exercitationem cupiditate explicabo facere!
             Suscipit velit eum cum id facilis.
           </p>
-          <button class="resume-btn active" data-tab="experience">Experience</button>
+          <button class="resume-btn active" data-tab="experience">
+            Experience
+          </button>
           <button class="resume-btn" data-tab="education">Education</button>
           <button class="resume-btn" data-tab="skills">Skills</button>
           <button class="resume-btn" data-tab="about">About Me</button>
@@ -294,7 +325,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="portfolio active">
+    <section class="portfolio">
       <h2 class="heading">Latest <span>Projects</span></h2>
       <div class="portfolio-container">
         <div class="portfolio-box">
@@ -367,24 +398,112 @@
         <div class="portfolio-box">
           <div class="portfolio-carousel">
             <div class="img-slide">
-              <div class="img-item"><img src="images/portfolio1.jpg"></div>
-              <div class="img-item"><img src="images/portfolio2.jpg"></div>
-              <div class="img-item"><img src="images/portfolio3.jpg"></div>
-              <div class="img-item"><img src="images/portfolio4.jpg"></div>
-              <div class="img-item"><img src="images/portfolio5.jpg"></div>
-              <div class="img-item"><img src="images/portfolio6.jpg"></div>
+              <div class="img-item"><img src="images/portfolio1.jpg" /></div>
+              <div class="img-item"><img src="images/portfolio2.jpg" /></div>
+              <div class="img-item"><img src="images/portfolio3.jpg" /></div>
+              <div class="img-item"><img src="images/portfolio4.jpg" /></div>
+              <div class="img-item"><img src="images/portfolio5.jpg" /></div>
+              <div class="img-item"><img src="images/portfolio6.jpg" /></div>
             </div>
           </div>
           <div class="navigation">
-            <button class="arrow-left disabled"><i class='bx bx-chevron-left'></i></button>
-            <button class="arrow-right"><i class='bx bx-chevron-right'></i></button>
+            <button class="arrow-left disabled">
+              <i class="bx bx-chevron-left"></i>
+            </button>
+            <button class="arrow-right">
+              <i class="bx bx-chevron-right"></i>
+            </button>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="contact-container">
+        <!-- Contact Information Box -->
+        <div class="contact-box">
+          <h2>Let's Work Together</h2>
+          <p class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+            asperiores dicta aut illum similique eveniet veritatis beatae earum
+            sapiente provident?
+          </p>
+
+          <!-- Phone Detail -->
+          <div class="contact-detail">
+            <i class="bx bxs-phone"></i>
+            <div class="detail">
+              <p>Phone</p>
+              <p>(+12) 345 678 910</p>
+            </div>
+          </div>
+
+          <!-- Email Detail -->
+          <div class="contact-detail">
+            <i class="bx bxs-envelope"></i>
+            <div class="detail">
+              <p>Email</p>
+              <p>litonmioa@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- Address Detail -->
+          <div class="contact-detail">
+            <i class="bx bxs-map"></i>
+            <div class="detail">
+              <p>Address</p>
+              <p>123 Anywhere Street, Any City</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Box -->
+        <div class="contact-box">
+          <form action="#" method="POST">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+
+            <!-- Form Fields -->
+            <div class="field-box">
+              <input
+                type="text"
+                name="fullname"
+                placeholder="Full Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                required
+              />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Email Subject"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Send Message</button>
+          </form>
         </div>
       </div>
     </section>
 
     <!-- Custom JS -->
     <script src="script.js"></script>
-    
   </body>
 </html>
